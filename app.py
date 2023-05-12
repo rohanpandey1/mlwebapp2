@@ -1,4 +1,5 @@
 import joblib
+from flask import *
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
