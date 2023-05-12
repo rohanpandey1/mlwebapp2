@@ -1,5 +1,4 @@
 import joblib
-from flask import *
 from flask import Flask, render_template, redirect, url_for, request
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
@@ -13,7 +12,6 @@ import pickle
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-
 filename = 'diabetes-prediction-rfc-model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
